@@ -1,0 +1,15 @@
+{
+    "mqtt_host": "192.168.0.50",
+    "mqtt_port": "1883",
+    "mqtt_user": "user",
+    "mqtt_password": "password",
+    "mqtt_retain": "true",
+    "mqtt_topic": "rtl_433",
+    "protocol": "-R 11 -R 40 -R 41 -R 55 -R 74",
+    "units": "customary",
+    "discovery_prefix": "homeassistant",
+    "discovery_interval": 600,
+    "whitelist_enable": "false",
+    "whitelist": "",
+    "debug": "false"
+}
