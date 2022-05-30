@@ -487,7 +487,10 @@ def publish_config(mqttc, topic, model, instance, channel, mapping):
 
     # add Home Assistant device info
 
-    manufacturer, model = model.split("-", 1)
+    if '-' in model:
+        manufacturer, model = model.split("-", 1)
+    else:
+        manufacturer = 'Unknown'
 
     device = {}
     device["identifiers"] = instance
