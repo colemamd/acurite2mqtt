@@ -62,8 +62,7 @@ mappings = {
         "device_type": "sensor",
         "object_suffic": "channel",
         "config": {
-            "device_class": "",
-            "name": "",
+            "name": "device_channel",
             "unit_of_measurement": "",
             "value_tempate": "{{ value }}"
         }
