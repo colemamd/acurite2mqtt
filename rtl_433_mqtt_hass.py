@@ -60,7 +60,7 @@ mappings = {
     },
     "channel": {
         "device_type": "sensor",
-        "object_suffic": "channel",
+        "object_suffix": "channel",
         "config": {
             "device_class": "",
             "name": "",
