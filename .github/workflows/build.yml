@@ -19,7 +19,7 @@ jobs:
           images:
             colemamd/acurite2mqtt
           tags:
-            type=semver,pattern={{major}}.{{minor}}
+            type=semver,pattern={{version}}
           flavor:
             latest=true
 
