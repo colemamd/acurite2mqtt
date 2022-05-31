@@ -19,7 +19,7 @@ jobs:
           images:
             colemamd/acurite2mqtt
           tags:
-            type=semver,pattern={{major}}.{{minor}}
+            type=semver,pattern={{version}}
           flavor:
             latest=true
 
@@ -38,4 +38,5 @@ jobs:
           context: .
           push: true
           tags: ${{ steps.meta.outputs.tags }}
+          platforms: linux/amd64,linux/arm64,linux/arm/v7
           
