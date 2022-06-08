@@ -35,6 +35,7 @@ Example options.json:
     "mqtt_topic": "rtl_433",
     "protocol": "-R 11 -R 40 -R 41 -R 55 -R 74",
     "units": "customary",
+    "expire_after": 60,
     "discovery_prefix": "homeassistant",
     "discovery_interval": 600,
     "whitelist_enable": "false",
@@ -86,6 +87,10 @@ to scan/acquire new device id's.  But be cautious... any undesirable devices wil
 
 This is a `space separated` list of device id's that are desired to be received and processed.  Any devices that are not in this
 list will be ignored (if whitelist_enables is set to true).
+
+### Option: `expire_after`
+
+This is a `integer` value that will set an individual sensor entity to `unknown` if no payload is received within the specified seconds. The default value of 0 disables this feature.
 
 ### Option: `units`
 
