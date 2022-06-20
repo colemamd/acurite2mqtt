@@ -53,7 +53,7 @@ mappings = {
         "device_type": "sensor",
         "object_suffix": "freq",
         "config": {
-            "device_class": "freq",
+            "device_class": "frequency",
             "name": "",
             "unit_of_measurement": "Mhz",
             "value_template": "{{ value }}"
